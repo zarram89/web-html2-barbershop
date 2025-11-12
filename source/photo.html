@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Наши работы | Барбершоп «Бородинский»</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="page__body">
+<header class="main-header">
+  <a class="main-header__logo" href="index.html">
+    <img src="images/logotype-phone.svg" width="226" height="30" alt="Барбершоп «Бородинский».">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a href="photo.html">
+            Наши работы
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Записаться
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Контакты
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+      <div class="main-nav__list user-list">
+        <a class="user-list__login" href="login.html">
+          <svg class="user-list__login-icon" width="16" height="16">
+            <use href="icons/stack.svg#icon-login"></use>
+          </svg>
+          Войти
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="main-inner main-container">
+  <div class="main-inner__wrapper">
+    <header class="inner-header">
+      <h1 class="inner-header__title">Наши работы</h1>
+      <a class="inner-header__button button" href="index.html">На главную</a>
+    </header>
+    <section class="works">
+      <h2 class="visually-hidden">Примеры наших стрижек и бород</h2>
+      <ul class="works__list">
+        <li class="works__item works__item--highlighted">
+          <img class="works__image" src="images/photo-1.jpg" width="280" height="480" alt="Фото клиента">
+          <p class="works__badge">Работа месяца</p>
+          <h3 class="works__name">Лжепётр Мчиславский</h3>
+          <p class="works__text">Где я только не стригся, но так как делаете вы — не умеет никто другой! Ещё раз спасибо и до скорого!</p>
+          <ul class="works__tags">
+            <li class="works__tag">Стрижка</li>
+            <li class="works__tag">Усы</li>
+            <li class="works__tag">Бритьё</li>
+          </ul>
+        </li>
+
+        <li class="works__item">
+          <img class="works__image" src="images/photo-2.jpg" width="280" height="176" alt="Фото клиента">
+          <h3 class="works__name">Саша Мальцев</h3>
+          <p class="works__text">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
+          <ul class="works__tags">
+            <li class="works__tag">Стрижка</li>
+          </ul>
+        </li>
+
+        <li class="works__item">
+          <img class="works__image" src="images/photo-3.jpg" width="280" height="160" alt="Фото клиента">
+          <h3 class="works__name">Владимир Иванич</h3>
+          <p class="works__text">К зимнему сезону — готов!</p>
+          <ul class="works__tags">
+            <li class="works__tag">Борода</li>
+            <li class="works__tag">Усы</li>
+          </ul>
+        </li>
+
+        <li class="works__item">
+          <img class="works__image" src="images/photo-4.jpg" width="280" height="160" alt="Фото клиента">
+          <h3 class="works__name">Винстон Синий</h3>
+          <p class="works__text">Как только зарастают и волосы начинают мешать — бегом в Бородинский!</p>
+          <ul class="works__tags">
+            <li class="works__tag">Стрижка</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="price">
+      <h2 class="price__title">Прейскурант</h2>
+      <dl class="price__list">
+        <div class="price__item">
+          <dt class="price__service">Классическая стрижка (с мытьём головы)</dt>
+          <dd class="price__value">1 500 руб.</dd>
+        </div>
+        <div class="price__item">
+          <dt class="price__service">Современный вариант (с мытьём головы)</dt>
+          <dd class="price__value">1 500 руб.</dd>
+        </div>
+        <div class="price__item">
+          <dt class="price__service">Индивидуальный подход</dt>
+          <dd class="price__value">2 000 руб.</dd>
+        </div>
+        <div class="price__item">
+          <dt class="price__service">Бритьё головы (без мытья)</dt>
+          <dd class="price__value">500 руб.</dd>
+        </div>
+        <div class="price__item">
+          <dt class="price__service">Бритьё головы (с мытьём головы)</dt>
+          <dd class="price__value">1 000 руб.</dd>
+        </div>
+      </dl>
+      <p class="price__discount">С 10:00 до 14:00 скидка 20%</p>
+    </section>
+  </div>
+</main>
+<footer class="main-footer">
+  <div class="main-footer__wrapper">
+    <div class="main-footer__contacts contacts">
+      <b class="contacts__title">Барбершоп «Бородинский»</b>
+      <p class="contacts__text">
+        г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+        <a class="contacts__phone" href="tel:+78125556666">
+          <span class="contacts__phone-text">Тел.:</span>+7 (812) 555-66-66
+        </a>
+      </p>
+    </div>
+    <div class="main-footer__social social">
+      <b class="social__title">Давайте дружить!</b>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
