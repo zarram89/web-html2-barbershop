@@ -4,12 +4,20 @@
   <meta charset="UTF-8">
   <title>Главная | Барбершоп «Бородинский»</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="page__body">
 <header class="main-header">
   <a class="main-header__logo" href="index.html">
-    <img src="images/logotype-phone.svg" width="226" height="30" alt="Барбершоп «Бородинский».">
+    <picture>
+      <source media="(min-width: 1200px)" width="370" height="153" type="image/svg+xml" srcset="images/logotype-desktop.svg">
+      <source media="(min-width: 768px)" width="370" height="101" type="image/svg+xml" srcset="images/logotype-tablet.svg">
+      <img src="images/logotype-phone.svg" width="226" height="30" alt="Барбершоп «Бородинский».">
+    </picture>
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -185,21 +193,33 @@
       <a class="reviews__write button" href="form.html">Оставить свой</a>
       <div class="reviews__list slider__list">
         <blockquote class="reviews__item slider__item">
-          <img class="reviews__author-image" src="images/picture-travis-phone@1x.jpg" width="50" height="33" alt="Фото Трэвиса Баркера.">
+          <picture>
+            <source width="249" height="160" type="image/png" media="(min-width: 1200px)" srcset="images/picture-travis-desktop@1x.jpg 1x, images/picture-travis-desktop@2x.jpg 2x" >
+            <source width="80" height="80" type="image/png" media="(min-width: 768px)" srcset="images/picture-travis-tablet@1x.jpg 1x, images/picture-travis-tablet@2x.jpg 2x" >
+            <img class="reviews__author-image" src="images/picture-travis-phone@1x.jpg" srcset="images/picture-travis-phone@2x.jpg" width="50" height="50" alt="Фото Трэвиса Баркера.">
+          </picture>
           <div class="reviews__author-info">
             <cite class="reviews__author-name">Трэвис Баркер</cite>
             <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
           </div>
         </blockquote>
         <blockquote class="reviews__item slider__item">
-          <img class="reviews__author-image" src="images/picture-travis-phone@1x.jpg" width="50" height="33" alt="Фото Джона Смита.">
+          <picture>
+            <source width="249" height="160" type="image/png" media="(min-width: 1200px)" srcset="images/picture-travis-desktop@1x.jpg 1x, images/picture-travis-desktop@2x.jpg 2x" >
+            <source width="80" height="80" type="image/png" media="(min-width: 768px)" srcset="images/picture-travis-tablet@1x.jpg 1x, images/picture-travis-tablet@2x.jpg 2x" >
+            <img class="reviews__author-image" src="images/picture-travis-phone@1x.jpg" srcset="images/picture-travis-phone@2x.jpg" width="50" height="50" alt="Фото Трэвиса Баркера.">
+          </picture>
           <div class="reviews__author-info">
             <cite class="reviews__author-name">Джон Смит</cite>
             <p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
           </div>
         </blockquote>
         <blockquote class="reviews__item slider__item">
-          <img class="reviews__author-image" src="images/picture-travis-phone@1x.jpg" width="50" height="33" alt="Фото Ивана Бородайло.">
+          <picture>
+            <source width="249" height="160" type="image/png" media="(min-width: 1200px)" srcset="images/picture-travis-desktop@1x.jpg 1x, images/picture-travis-desktop@2x.jpg 2x" >
+            <source width="80" height="80" type="image/png" media="(min-width: 768px)" srcset="images/picture-travis-tablet@1x.jpg 1x, images/picture-travis-tablet@2x.jpg 2x" >
+            <img class="reviews__author-image" src="images/picture-travis-phone@1x.jpg" srcset="images/picture-travis-phone@2x.jpg" width="50" height="50" alt="Фото Трэвиса Баркера.">
+          </picture>
           <div class="reviews__author-info">
             <cite class="reviews__author-name">Иван Бородайло</cite>
             <p class="reviews__text">В Бородинском ваша борода в надёжных руках!</p>

@@ -4,12 +4,20 @@
   <meta charset="UTF-8">
   <title>Наши работы | Барбершоп «Бородинский»</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="page__body">
 <header class="main-header">
   <a class="main-header__logo" href="index.html">
-    <img src="images/logotype-phone.svg" width="226" height="30" alt="Барбершоп «Бородинский».">
+    <picture>
+      <source media="(min-width: 1200px)" width="370" height="153" type="image/svg+xml" srcset="images/logotype-desktop.svg">
+      <source media="(min-width: 768px)" width="370" height="101" type="image/svg+xml" srcset="images/logotype-tablet.svg">
+      <img src="images/logotype-phone.svg" width="226" height="30" alt="Барбершоп «Бородинский».">
+    </picture>
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -52,53 +60,89 @@
     </div>
   </nav>
 </header>
-<main class="main-inner main-container">
-  <div class="main-inner__wrapper">
-    <header class="inner-header">
-      <h1 class="inner-header__title">Наши работы</h1>
-      <a class="inner-header__button button" href="index.html">На главную</a>
+<main class="main-container main-container--inner">
+  <div class="main-container__wrapper">
+    <header class="main-title">
+      <h1 class="main-title__title">Наши работы</h1>
+      <a class="button" href="index.html">На главную</a>
     </header>
     <section class="works">
       <h2 class="visually-hidden">Примеры наших стрижек и бород</h2>
       <ul class="works__list">
-        <li class="works__item works__item--highlighted">
-          <img class="works__image" src="images/photo-1.jpg" width="280" height="480" alt="Фото клиента">
-          <p class="works__badge">Работа месяца</p>
-          <h3 class="works__name">Лжепётр Мчиславский</h3>
-          <p class="works__text">Где я только не стригся, но так как делаете вы — не умеет никто другой! Ещё раз спасибо и до скорого!</p>
-          <ul class="works__tags">
-            <li class="works__tag">Стрижка</li>
-            <li class="works__tag">Усы</li>
-            <li class="works__tag">Бритьё</li>
-          </ul>
+        <li class="works__photo">
+          <article class="works-item works-item--lead works-item--work-of-month">
+            <p class="works-item__image-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" width="480" height="480"  type="image/jpeg" srcset="images/photo-1-desktop@1x.jpg 1x,images/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="270" height="480" type="image/jpeg" srcset="images/photo-1-tablet@1x.jpg 1x, images/photo-1-tablet@2x.jpg 2x">
+                <img class="works-item__image" src="images/photo-1-phone@1x.jpg" srcset="images/photo-1-phone@2x.jpg 2x" width="280" height="480" alt="Пример нашей работы.">
+              </picture>
+            </p>
+            <div class="works-item__review">
+              <h2 class="works-item__title">Лжепётр Мчиславский</h2>
+              <blockquote class="works-item__text">Где я только не стригся, но так как делаете это вы — не умеет никто другой! Ещё раз спасибо и до скорого!</blockquote>
+              <ul class="works-item__parameter-list">
+                <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+                <li class="works-item__parameter-item works-item__parameter-item--shaving">Бритьё</li>
+                <li class="works-item__parameter-item works-item__parameter-item--mustache">Усы</li>
+              </ul>
+            </div>
+          </article>
         </li>
-
-        <li class="works__item">
-          <img class="works__image" src="images/photo-2.jpg" width="280" height="176" alt="Фото клиента">
-          <h3 class="works__name">Саша Мальцев</h3>
-          <p class="works__text">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
-          <ul class="works__tags">
-            <li class="works__tag">Стрижка</li>
-          </ul>
+        <li class="works__photo">
+          <article class="works-item">
+            <p class="works-item__image-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" width="294" height="294" type="image/jpeg" srcset="images/photo-2-desktop@1x.jpg 1x, images/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="270" height="293" type="image/jpeg" srcset="images/photo-2-tablet@1x.jpg 1x, images/photo-2-tablet@2x.jpg 2x">
+                <img class="works-item__image" src="images/photo-2-phone@1x.jpg" srcset="images/photo-2-phone@2x.jpg 2x" width="280" height="176" alt="Пример нашей работы.">
+              </picture>
+            </p>
+            <div class="works-item__review">
+              <h2 class="works-item__title">Саша Мальцев</h2>
+              <blockquote class="works-item__text">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</blockquote>
+              <ul class="works-item__parameter-list">
+                <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+              </ul>
+            </div>
+          </article>
         </li>
-
-        <li class="works__item">
-          <img class="works__image" src="images/photo-3.jpg" width="280" height="160" alt="Фото клиента">
-          <h3 class="works__name">Владимир Иванич</h3>
-          <p class="works__text">К зимнему сезону — готов!</p>
-          <ul class="works__tags">
-            <li class="works__tag">Борода</li>
-            <li class="works__tag">Усы</li>
-          </ul>
+        <li class="works__photo">
+          <article class="works-item">
+            <p class="works-item__image-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" width="294" height="294" type="image/jpeg" srcset="images/photo-3-desktop@1x.jpg 1x, images/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="270" height="293" type="image/jpeg" srcset="images/photo-3-tablet@1x.jpg 1x, images/photo-3-tablet@2x.jpg 2x">
+                <img class="works-item__image" src="images/photo-3-phone@1x.jpg" srcset="images/photo-3-phone@2x.jpg 2x" width="280" height="176" alt="Пример нашей работы.">
+              </picture>
+            </p>
+            <div class="works-item__review">
+              <h2 class="works-item__title">Владимир Иваныч</h2>
+              <blockquote class="works-item__text">К зимнему сезону — готов!</blockquote>
+              <ul class="works-item__parameter-list">
+                <li class="works-item__parameter-item works-item__parameter-item--shaving">Бритьё</li>
+                <li class="works-item__parameter-item works-item__parameter-item--mustache">Усы</li>
+              </ul>
+            </div>
+          </article>
         </li>
-
-        <li class="works__item">
-          <img class="works__image" src="images/photo-4.jpg" width="280" height="160" alt="Фото клиента">
-          <h3 class="works__name">Винстон Синий</h3>
-          <p class="works__text">Как только зарастают и волосы начинают мешать — бегом в Бородинский!</p>
-          <ul class="works__tags">
-            <li class="works__tag">Стрижка</li>
-          </ul>
+        <li class="works__photo">
+          <article class="works-item">
+            <p class="works-item__image-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" width="294" height="294" type="image/jpeg" srcset="images/photo-4-desktop@1x.jpg 1x, images/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="270" height="293" type="image/jpeg" srcset="images/photo-4-tablet@1x.jpg 1x, images/photo-4-tablet@2x.jpg 2x">
+                <img class="works-item__image" src="images/photo-4-phone@1x.jpg" srcset="images/photo-4-phone@2x.jpg 2x" width="280" height="176" alt="Пример нашей работы.">
+              </picture>
+            </p>
+            <div class="works-item__review">
+              <h2 class="works-item__title">Винстон Синий</h2>
+              <blockquote class="works-item__text">Как только зарастаю и волосы начинают мешать видеть — бегом в Бородинский!</blockquote>
+              <ul class="works-item__parameter-list">
+                <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+              </ul>
+            </div>
+          </article>
         </li>
       </ul>
     </section>

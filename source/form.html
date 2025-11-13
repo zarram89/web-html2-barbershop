@@ -4,12 +4,20 @@
   <meta charset="UTF-8">
   <title>Запись на стрижку | Барбершоп «Бородинский»</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="page__body">
 <header class="main-header">
   <a class="main-header__logo" href="index.html">
-    <img src="images/logotype-phone.svg" width="226" height="30" alt="Барбершоп «Бородинский».">
+    <picture>
+      <source media="(min-width: 1200px)" width="370" height="153" type="image/svg+xml" srcset="images/logotype-desktop.svg">
+      <source media="(min-width: 768px)" width="370" height="101" type="image/svg+xml" srcset="images/logotype-tablet.svg">
+      <img src="images/logotype-phone.svg" width="226" height="30" alt="Барбершоп «Бородинский».">
+    </picture>
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -52,11 +60,11 @@
     </div>
   </nav>
 </header>
-<main class="main-inner main-container">
-  <div class="main-inner__wrapper">
-    <header class="inner-header">
-      <h1 class="inner-header__title">Запись на стрижку</h1>
-      <a class="inner-header__button button" href="index.html">На главную</a>
+<main class="main-container main-container--inner">
+  <div class="main-container__wrapper">
+    <header class="main-title">
+      <h1 class="main-title__title">Запись на стрижку</h1>
+      <a class="button" href="index.html">На главную</a>
     </header>
     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="appointment-form__group">
